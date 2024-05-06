@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/material_dynamic_neutral90">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como nos afecta a los humanos"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:justificationMode="inter_word"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La exposición prolongada al ruido puede afectar de distintas formas a la salud, produciendo molestias, trastornos del sueño, efectos perjudiciales en los sistemas cardiovascular y metabólico, y deficiencias cognitivas en los niños. Los datos actuales permiten deducir que el ruido ambiental es una de las causas que provocan 48 000 nuevos casos de cardiopatía isquémica al año, así como 12 000 muertes prematuras. También se calcula que 22 millones de personas sufren molestias crónicas importantes y que 6,5 millones de personas padecen alteraciones del sueño graves y crónicas. Como consecuencia del ruido de las aeronaves, calculamos que 12 500 niños en edad escolar tienen problemas con la lectura."
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:justificationMode="inter_word"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="5dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/contsonora"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muchas personas no se dan cuenta de que la contaminación acústica es un problema grave que afecta a la salud de todos los seres humanos, incluida la suya. Si bien es cierto que la contaminación atmosférica causa muchas más muertes prematuras que la acústica, parece que el ruido afecta en mayor medida a los indicadores sobre la calidad de vida y la salud mental. De hecho, según datos de la Organización Mundial de la Salud (OMS), el ruido es la segunda causa ambiental de problemas de salud, justo por detrás de la contaminación atmosférica (partículas en suspensión)."
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:justificationMode="inter_word"
+                    android:paddingTop="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como afecta a la biodiversidad"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:justificationMode="inter_word"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La contaminación acústica afecta a la biodiversidad hasta el punto de llegar a alterar el equilibrio de los ecosistemas silvestres. Los animales seleccionan sus hábitats teniendo en cuenta diversos factores, entre ellos, el ruido. Una especie que no tolere los ruidos difícilmente podrá adaptarse al resto de condiciones de un determinado hábitat."
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:justificationMode="inter_word"
+                    android:paddingBottom="15dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/taladro"
+                    android:scaleType="fitXY"
+                    android:paddingBottom="15dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Y esto que puede provocar? Principalmente, los efectos de la contaminación acústica afectan a las especies animales provocando que estas huyan de determinados entornos. Su desplazamiento puede alterar los ecosistemas de la zona."
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:justificationMode="inter_word"
+                    android:paddingBottom="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vídeo educativo para evitar generar contaminación acústica."
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textAlignment="center"/>
+                <VideoView
+                    android:id="@+id/vv2"
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:text="Click aqui para regresar a la pagina principal"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/material_dynamic_secondary95">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
